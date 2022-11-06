@@ -51,7 +51,8 @@ export const allReducers = (state = initialState, action) => {
         cartOpen: true,
         cart: state.cart.map((product) => {
           if (action._id === product._id) {
-            product.purchaseQuantity = action.purchaseQuantity;
+            return {...product, purchaseQuantity:action.purchaseQuantity}
+            // product.purchaseQuantity = action.purchaseQuantity;
           }
           return product;
         }),
@@ -102,6 +103,11 @@ export const allReducers = (state = initialState, action) => {
   }
 };
 
-export function useProductReducer(initialState) {
-  return useReducer(reducer, initialState);
-}
+export const { UPDATE_PRODUCTS, ADD_TO_CART, ADD_MULTIPLE_TO_CART, UPDATE_CART_QUANTITY,  REMOVE_FROM_CART, CLEAR_CART, TOGGLE_CART, UPDATE_CATEGORIES, UPDATE_CURRENT_CATEGORY} = allReducers.actions
+
+export default allReducers.reducer
+
+
+// export function useProductReducer(initialState) {
+//   return useReducer(reducer, initialState);
+// }
