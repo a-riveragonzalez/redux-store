@@ -1,32 +1,71 @@
-# 📐 Add Comments to Implementation of a Reducer
+# Redux Store
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Description
+E-commerce platform that uses Redux
 
-Work with a partner to add comments describing the functionality of the code found in [reducers.js](./Unsolved/client/src/utils/reducers.js).
+## Table of Contents 
 
-## 📝 Notes
+- [Description](#description)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
 
-What is the purpose of the action argument that gets passed to the reducer function?
+- [License](#license)
+- [Deployed Link](#deployed-link)
+- [GitHub Repository](#github-repository)
+- [Preview](#preview)
+- [Questions](#questions)
 
-How can we account for multiple types of actions inside the reducer?
+## User Story
 
-Refer to the documentation:
+```md
+AS a senior engineer working on an e-commerce platform
+I WANT my platform to use Redux to manage global state instead of the Context API
+SO THAT my website's state management is taken out of the React ecosystem
+```
+## Acceptance Criteria
 
-[React documentation on useReducer](https://reactjs.org/docs/Hooks-reference.html#usereducer)
+```md
+GIVEN an e-commerce platform that uses Redux to manage global state
+WHEN I review the app’s store
+THEN I find that the app uses a Redux store instead of the Context API
+WHEN I review the way the React front end accesses the store
+THEN I find that the app uses a Redux provider
+WHEN I review the way the app determines changes to its global state
+THEN I find that the app passes reducers to a Redux store instead of using the Context API
+WHEN I review the way the app extracts state data from the store
+THEN I find that the app uses Redux instead of the Context API
+WHEN I review the way the app dispatches actions
+THEN I find that the app uses Redux instead of the Context API
 
----
+```
 
-## 💡 Hints
 
-How do we make sure that the database is seeded?
+## License
+This project is covered under the <a href="https://opensource.org/licenses/MIT">MIT License</a>
 
-Which `npm` package allows us to run both the front end and the back end at the same time? How do you start it?
+## Deployed Link
+https://random-store-redux.herokuapp.com/
 
-## 🏆 Bonus
+## GitHub Repository
+https://github.com/a-riveragonzalez/redux-store
 
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
+## Preview
+The following animation shows how a user can register using the Signup page and then navigate to the Products page:
 
-* Why do we create variable names for each action type in `actions.js`?
+![signup and log in form](./assets/22-state-homework-demo-01.gif)
 
-Use [Google](https://www.google.com) or another search engine to research this.
+The following animation shows how the user can select a category, choose a product, view details about it on the product page, and add and remove it from their shopping cart:
 
----
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+![product page](./assets/22-state-homework-demo-02.gif)
+
+Finally, the user can checkout by going to their shopping cart, as shown in the following animation:
+
+![cart page](./assets/22-state-homework-demo-03.gif)
+
+## Questions
+
+For any troubleshooting and/or questions regarding this project, email me at :
+arelyrivera1996@gmail.com
+
+To check out more of my work, visit:
+https://github.com/a-riveragonzalez
