@@ -21,7 +21,7 @@ const initialState = {
 };
 
 // TODO: To get a better understand of how a reducer works - add comments to the various actions in the reducer
-export const allReducers = (state = initialState, action) => {
+const allReducers = (state = initialState, action) => {
   switch (action.type) {
     // TODO: Add a comment describing the functionality of the UPDATE_PRODUCTS case
     // Your comment here
@@ -51,7 +51,7 @@ export const allReducers = (state = initialState, action) => {
         cartOpen: true,
         cart: state.cart.map((product) => {
           if (action._id === product._id) {
-            return {...product, purchaseQuantity:action.purchaseQuantity}
+            return {...product, purchaseQuantity: action.purchaseQuantity}
             // product.purchaseQuantity = action.purchaseQuantity;
           }
           return product;
@@ -103,10 +103,9 @@ export const allReducers = (state = initialState, action) => {
   }
 };
 
-export const { UPDATE_PRODUCTS, ADD_TO_CART, ADD_MULTIPLE_TO_CART, UPDATE_CART_QUANTITY,  REMOVE_FROM_CART, CLEAR_CART, TOGGLE_CART, UPDATE_CATEGORIES, UPDATE_CURRENT_CATEGORY} = allReducers.actions
+// export const { UPDATE_PRODUCTS, ADD_TO_CART, ADD_MULTIPLE_TO_CART, UPDATE_CART_QUANTITY,  REMOVE_FROM_CART, CLEAR_CART, TOGGLE_CART, UPDATE_CATEGORIES, UPDATE_CURRENT_CATEGORY} = allReducers.actions
 
-export default allReducers.reducer
-
+export default allReducers;
 
 // export function useProductReducer(initialState) {
 //   return useReducer(reducer, initialState);
