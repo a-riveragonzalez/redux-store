@@ -68,7 +68,8 @@ h6 {
 
 p {
   font-size: 1.1rem;
-  margin-top: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 a {
@@ -238,11 +239,12 @@ footer a :hover {
 .product-card {
   width: 25%;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .product-card:hover {
   border-radius: 30px;
-  background: #white;
+  background: white;
   box-shadow: 5px 5px 14px #a2a2a2, -5px -5px 14px #ffffff;
 }
 
