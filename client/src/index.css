@@ -153,7 +153,7 @@ footer a {
 }
 
 footer a :hover {
-  color: var(--secondary)
+  color: var(--secondary);
 }
 
 /* ---------------------------------------------------------------- */
@@ -218,11 +218,6 @@ footer a :hover {
   padding-bottom: var(--spacing-two);
 }
 
-.card {
-  width: 25%;
-  text-align: center;
-}
-
 .error-text {
   color: var(--error);
 }
@@ -237,8 +232,22 @@ footer a :hover {
   color: var(--light);
 }
 
-.category-menu{
-  
+.category-menu {
+}
+
+.product-card {
+  width: 25%;
+  text-align: center;
+}
+
+.product-card:hover {
+  border-radius: 30px;
+  background: #white;
+  box-shadow: 5px 5px 14px #a2a2a2, -5px -5px 14px #ffffff;
+}
+
+.product-img {
+  border-radius: 30px;
 }
 /* ---------------------------------------------------------------- */
 
